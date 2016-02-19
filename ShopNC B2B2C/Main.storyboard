@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tdG-UQ-KvH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Goods Class View Controller-->
+        <scene sceneID="KRX-zk-e5O">
+            <objects>
+                <tableViewController id="1HG-VF-hpU" customClass="GoodsClassViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ca2-a0-f4H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="1HG-VF-hpU" id="4xe-pd-RSz"/>
+                            <outlet property="delegate" destination="1HG-VF-hpU" id="0di-Hh-6n2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="TyS-Tf-mhQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vr-Gn-Oso" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1556" y="1336"/>
+        </scene>
+        <!--Goods Sub Class View Controller-->
+        <scene sceneID="F8P-CD-5Q4">
+            <objects>
+                <tableViewController storyboardIdentifier="GoodsSubClassID" id="iwN-Oj-3Kk" customClass="GoodsSubClassViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ted-JY-tsD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="iwN-Oj-3Kk" id="mL6-D6-b4u"/>
+                            <outlet property="delegate" destination="iwN-Oj-3Kk" id="eys-fj-AZG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOI-Bb-7KS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1101" y="1336"/>
+        </scene>
+        <!--Goods List View Controller-->
+        <scene sceneID="D2a-8S-GbM">
+            <objects>
+                <viewController restorationIdentifier=" " storyboardIdentifier="GoodsListID" id="Jgj-d5-2El" customClass="GoodsListViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lta-5y-D2F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h35-gw-1uv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-629" y="1336"/>
+        </scene>
+        <!--Goods Detail View Controller-->
+        <scene sceneID="H1B-VO-bnt">
+            <objects>
+                <viewController storyboardIdentifier="GoodsDetailID" id="fNa-Jw-cbx" customClass="GoodsDetailViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qcg-vr-yX9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tec-a8-0wl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-141" y="1336"/>
+        </scene>
+        <!--Goods Info View Controller-->
+        <scene sceneID="k51-UK-H9f">
+            <objects>
+                <viewController storyboardIdentifier="GoodsInfoID" id="aNs-04-BSs" customClass="GoodsInfoViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qhR-T8-417">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFh-iJ-7WQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="1336"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Rge-Tk-Ftw">
+            <objects>
+                <tableViewController storyboardIdentifier="HomeViewID" id="hhk-FC-v41" customClass="HomeViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="d96-xm-Wr6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="hhk-FC-v41" id="ypr-n7-Za9"/>
+                            <outlet property="delegate" destination="hhk-FC-v41" id="2R4-gl-CHf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="e68-Fl-14a">
+                        <barButtonItem key="leftBarButtonItem" image="shopnc.png" id="yBh-s8-jPZ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFf-8G-AhB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1556" y="633"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="DJD-8m-X3D">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewID" id="qZ6-rd-x8S" customClass="SearchViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ppv-Au-MCL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5QG-o1-Rrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-629" y="633"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Gt7-1w-Jm0">
+            <objects>
+                <viewController storyboardIdentifier="WebViewID" id="3sb-3r-udB" customClass="WebViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Tc-d6-7Ra">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="40d-1z-8L0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-141" y="633"/>
+        </scene>
+        <!--Scan View Controller-->
+        <scene sceneID="nh5-QE-CSo">
+            <objects>
+                <viewController storyboardIdentifier="ScanViewID" id="80I-9G-fIv" customClass="ScanViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8uP-Of-QKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLI-1W-uy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="633"/>
+        </scene>
+        <!--Special View Controller-->
+        <scene sceneID="aFL-Vq-AAZ">
+            <objects>
+                <tableViewController storyboardIdentifier="SpecialViewID" id="YNo-Bh-jeD" customClass="SpecialViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sZs-ge-o5a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="YNo-Bh-jeD" id="V6E-w4-lgn"/>
+                            <outlet property="delegate" destination="YNo-Bh-jeD" id="38m-hk-OMi"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JLU-f5-JJD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1101" y="633"/>
+        </scene>
+        <!--Goods Param View Controller-->
+        <scene sceneID="wcW-mQ-IRe">
+            <objects>
+                <tableViewController storyboardIdentifier="GoodsParamID" id="f5h-tW-Sah" customClass="GoodsParamViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EK0-ef-bML">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="f5h-tW-Sah" id="AhD-cq-fFK"/>
+                            <outlet property="delegate" destination="f5h-tW-Sah" id="o6Z-VL-Mu6"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0am-4m-ih2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="1336"/>
+        </scene>
+        <!--Goods Gift View Controller-->
+        <scene sceneID="2jz-oS-PkS">
+            <objects>
+                <tableViewController storyboardIdentifier="GoodsGiftID" id="wmi-be-HGB" customClass="GoodsGiftViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0Of-UB-lpE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="wmi-be-HGB" id="QP2-JW-Q8P"/>
+                            <outlet property="delegate" destination="wmi-be-HGB" id="G1M-Iv-phD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dns-p0-Z7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1617" y="1336"/>
+        </scene>
+        <!--Goods Attr View Controller-->
+        <scene sceneID="b4D-Tx-xAy">
+            <objects>
+                <viewController storyboardIdentifier="GoodsAttrID" id="IBY-gX-1Ud" customClass="GoodsAttrViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xg7-bK-f5z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZDs-XU-qgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2038" y="1336"/>
+        </scene>
+        <!--Store Class View Controller-->
+        <scene sceneID="1f5-8A-8BQ">
+            <objects>
+                <tableViewController storyboardIdentifier="StoreClassViewID" id="FBN-pS-Yb2" customClass="StoreClassViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bWH-HQ-GPB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="FBN-pS-Yb2" id="p50-eT-rRR"/>
+                            <outlet property="delegate" destination="FBN-pS-Yb2" id="3Hv-Xa-gDL"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ja9-w6-xRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2453" y="1336"/>
+        </scene>
+        <!--Store Search View Controller-->
+        <scene sceneID="us5-tx-ugY">
+            <objects>
+                <viewController storyboardIdentifier="StoreSearchViewID" id="0UQ-3Y-9XV" customClass="StoreSearchViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6OC-VS-0KF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9n-y3-hZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2876" y="1336"/>
+        </scene>
+        <!--GoodsMS View Controller-->
+        <scene sceneID="QjZ-Gx-vMh">
+            <objects>
+                <tableViewController storyboardIdentifier="GoodsMSID" id="xMG-Lh-tOl" customClass="GoodsMSViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="iHM-ng-d10">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="xMG-Lh-tOl" id="7PB-7u-fSp"/>
+                            <outlet property="delegate" destination="xMG-Lh-tOl" id="RRH-45-epF"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJc-GN-sVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="1336"/>
+        </scene>
+        <!--User View Controller-->
+        <scene sceneID="Lf6-pk-xFb">
+            <objects>
+                <viewController id="sd3-Ob-yY4" customClass="UserViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a1H-g5-bVo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4UN-C1-d9X"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZN-o8-Jnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1556" y="2891"/>
+        </scene>
+        <!--Fav Store View Controller-->
+        <scene sceneID="laU-jz-Sev">
+            <objects>
+                <viewController storyboardIdentifier="FavStoreViewID" id="hcY-m5-XST" customClass="FavStoreViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HPc-aj-gnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTF-3T-RtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5506" y="2891"/>
+        </scene>
+        <!--Store Detail View Controller-->
+        <scene sceneID="rxd-TW-who">
+            <objects>
+                <viewController storyboardIdentifier="StoreDetailViewID" id="qXA-1m-Yoz" customClass="StoreDetailViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nW1-WR-H0v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0TD-ZV-t35" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5931" y="2891"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Lzc-Hf-WVC">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewID" id="rhB-73-dwK" customClass="LoginViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hKu-st-UcR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tbw-2s-WUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1101" y="2891"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="zb7-oY-29w">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewID" id="uKM-0k-3KM" customClass="SettingViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NFe-b1-xH9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GsX-Wk-Co6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-141" y="2891"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="hYS-9K-7BL">
+            <objects>
+                <viewController storyboardIdentifier="RegViewID" id="COO-Zx-nEl" customClass="RegisterViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zk0-KT-bb8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJE-8g-5ow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-629" y="2891"/>
+        </scene>
+        <!--Fav Goods View Controller-->
+        <scene sceneID="YI6-kf-dga">
+            <objects>
+                <viewController storyboardIdentifier="FavGoodsViewID" id="B0T-Gv-wV4" customClass="FavGoodsViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Ep-Jb-dNT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pRK-IU-Z1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="2891"/>
+        </scene>
+        <!--Address List View Controller-->
+        <scene sceneID="uKS-9S-5Ky">
+            <objects>
+                <viewController storyboardIdentifier="AddressListViewID" id="1cd-qR-l0U" customClass="AddressListViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ESH-E6-nLO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Nf-eF-WgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="2891"/>
+        </scene>
+        <!--Address Edit View Controller-->
+        <scene sceneID="2rv-dE-zCn">
+            <objects>
+                <viewController storyboardIdentifier="AddressEditViewID" id="qkc-mr-2w1" customClass="AddressEditViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ja-bE-Lds">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKf-We-9Sy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="2891"/>
+        </scene>
+        <!--Order List View Controller-->
+        <scene sceneID="gtZ-H5-Qvl">
+            <objects>
+                <viewController storyboardIdentifier="OrderListViewID" id="gSQ-Nq-gJh" customClass="OrderListViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I7f-NH-VuC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hIm-lv-kdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1617" y="2891"/>
+        </scene>
+        <!--Ship Info View Controller-->
+        <scene sceneID="EK5-mw-vpJ">
+            <objects>
+                <viewController storyboardIdentifier="ShipInfoViewID" id="JQo-7Q-oNI" customClass="ShipInfoViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L6s-LQ-N9n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNb-d9-PPw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2038" y="2891"/>
+        </scene>
+        <!--Order List View Controller-->
+        <scene sceneID="kpc-V2-DZI">
+            <objects>
+                <viewController storyboardIdentifier="VROrderListViewID" id="fAF-d8-JWH" customClass="VROrderListViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wvZ-Vb-AWc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cww-8T-GoF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2453" y="2891"/>
+        </scene>
+        <!--Order Code List View Controller-->
+        <scene sceneID="7cc-Lo-CCL">
+            <objects>
+                <viewController storyboardIdentifier="VROrderCodeListViewID" id="sbU-2w-ABW" customClass="VROrderCodeListViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xa2-ge-rxq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYt-z0-PFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2876" y="2891"/>
+        </scene>
+        <!--Aboutus View Controller-->
+        <scene sceneID="L82-nz-vpG">
+            <objects>
+                <viewController storyboardIdentifier="AboutusViewID" id="OcB-du-rjw" customClass="AboutusViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nkn-by-d2G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eG8-xM-Ztj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5066" y="2891"/>
+        </scene>
+        <!--Feedback View Controller-->
+        <scene sceneID="9zG-tD-40t">
+            <objects>
+                <viewController storyboardIdentifier="FeedbackViewID" id="c5U-px-KPS" customClass="FeedbackViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cOn-Gu-vvO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJi-d6-f6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4622" y="2891"/>
+        </scene>
+        <!--Invoice Add View Controller-->
+        <scene sceneID="gMv-8Y-nv2">
+            <objects>
+                <viewController storyboardIdentifier="InvoiceAddViewID" id="FUR-1W-jWS" customClass="InvoiceAddViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sTJ-Yb-6Wd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tiP-VO-VCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4186" y="2891"/>
+        </scene>
+        <!--Invoice List View Controller-->
+        <scene sceneID="s4b-gt-WtF">
+            <objects>
+                <viewController storyboardIdentifier="InvoiceListViewID" id="btV-nV-wo3" customClass="InvoiceListViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NjS-Xi-Qbi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30C-Fw-7QT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3744" y="2891"/>
+        </scene>
+        <!--Voucher List View Controller-->
+        <scene sceneID="39U-LB-bBo">
+            <objects>
+                <viewController storyboardIdentifier="VoucherListViewID" id="Fhk-p3-wh9" customClass="VoucherListViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gAJ-42-vFs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Jf-Sq-Kvn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3292" y="2891"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="QwC-qA-MnI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XpT-KS-V4Z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="homePageImage" id="7w9-fz-VD3">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T8V-ar-JxU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hhk-FC-v41" kind="relationship" relationship="rootViewController" id="Eoj-BO-fuh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ES2-6F-bKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2088" y="633"/>
+        </scene>
+        <!--分类-->
+        <scene sceneID="gPu-5k-BpZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Knb-3p-sC4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="分类" image="goodsClassifyImage" id="Pp5-zN-Tlq">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3nW-tS-B84">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1HG-VF-hpU" kind="relationship" relationship="rootViewController" id="i6E-Jn-S5s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmD-86-xeT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2088" y="1336"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="zGD-Wt-G4m">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WeW-za-Wiw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="购物车" image="cartPageImage" id="OwL-4d-OjE">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QcB-XN-itJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2L4-JD-9fJ" kind="relationship" relationship="rootViewController" id="mGy-6K-4v4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1f-Wd-Xjq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2088" y="2077"/>
+        </scene>
+        <!--Cart View Controller-->
+        <scene sceneID="JmB-XO-BGO">
+            <objects>
+                <viewController storyboardIdentifier="CartViewID" id="2L4-JD-9fJ" customClass="CartViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vea-Zp-Gbb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tdk-yF-wLw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1g-aQ-WX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1556" y="2077"/>
+        </scene>
+        <!--Buy View Controller-->
+        <scene sceneID="w47-Qh-vFO">
+            <objects>
+                <viewController storyboardIdentifier="BuyViewID" id="prE-d0-OWM" customClass="BuyViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C2t-cq-zQ7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fyU-ts-VDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1101" y="2077"/>
+        </scene>
+        <!--Pay View Controller-->
+        <scene sceneID="7TN-F9-kkr">
+            <objects>
+                <viewController storyboardIdentifier="PayViewID" id="IxI-KL-vK5" customClass="PayViewController" customModule="ShopNC_B2B2C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M1p-0e-aWc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXk-eD-MG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-629" y="2077"/>
+        </scene>
+        <!--个人中心-->
+        <scene sceneID="dWe-US-PEV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L0a-JN-q4G" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="个人中心" image="userCenterImage" id="xZw-n4-JP5">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ki3-dN-gP2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sd3-Ob-yY4" kind="relationship" relationship="rootViewController" id="EYR-vg-1gu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZO-Xh-sgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2088" y="2891"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GGF-Cm-zUh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tdG-UQ-KvH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="lBf-8p-dkl">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XpT-KS-V4Z" kind="relationship" relationship="viewControllers" id="toG-YI-ult"/>
+                        <segue destination="Knb-3p-sC4" kind="relationship" relationship="viewControllers" id="W8k-Mz-236"/>
+                        <segue destination="WeW-za-Wiw" kind="relationship" relationship="viewControllers" id="ApI-UV-1rM"/>
+                        <segue destination="L0a-JN-q4G" kind="relationship" relationship="viewControllers" id="hNv-5T-PTX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wd0-Id-VI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2964" y="1673"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cartPageImage" width="24" height="24"/>
+        <image name="goodsClassifyImage" width="24" height="24"/>
+        <image name="homePageImage" width="24" height="24"/>
+        <image name="shopnc.png" width="58" height="22"/>
+        <image name="userCenterImage" width="24" height="24"/>
+    </resources>
+</document>
