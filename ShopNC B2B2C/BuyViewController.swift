@@ -349,7 +349,7 @@ class BuyViewController: UIViewController, UITableViewDataSource, UITableViewDel
                     freight_hash = data_array.objectForKey("freight_hash") as! String
                     city_id = address_info.objectForKey("city_id") as! String
                     area_id = address_info.objectForKey("area_id") as! String
-                    addressUpdate()
+                   //liubwtest  addressUpdate()
                     allheight += 120
                 } else {
                     activity.stopAnimating()

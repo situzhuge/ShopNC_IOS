@@ -35,11 +35,11 @@ class ScanViewController: UIViewController, AVCaptureMetadataOutputObjectsDelega
         let imageView = UIImageView(frame:CGRectMake((screenW-300)/2, (screenH-200)/2, 300, 200))
         imageView.image = UIImage(named:"pick_bg.png")
         self.view.addSubview(imageView)
-        //闪光灯按钮
-        torchbtn.frame.size = CGSizeMake(30, 30)
-        torchbtn.addTarget(self, action: "torchmode", forControlEvents: UIControlEvents.TouchUpInside)
-        torchbtn.setBackgroundImage(UIImage(named: "ledoff.png"), forState: UIControlState.Normal)
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: torchbtn)
+        //闪光灯按钮 liubwtest
+//        torchbtn.frame.size = CGSizeMake(30, 30)
+//        torchbtn.addTarget(self, action: "torchmode", forControlEvents: UIControlEvents.TouchUpInside)
+//        torchbtn.setBackgroundImage(UIImage(named: "ledoff.png"), forState: UIControlState.Normal)
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: torchbtn)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -118,37 +118,38 @@ class ScanViewController: UIViewController, AVCaptureMetadataOutputObjectsDelega
     }
     
     /**闪光灯设置**/
-    func torchmode() {
-        if mode == "LedOn" {
-            torchbtn.setBackgroundImage(UIImage(named: "ledoff.png"), forState: UIControlState.Normal)
-            mode = "LedOff"
-            turnOffLed()
-        } else {
-            torchbtn.setBackgroundImage(UIImage(named: "ledon.png"), forState: UIControlState.Normal)
-            mode = "LedOn"
-            turnOnLed()
-        }
-    }
-    
-    func turnOnLed() {
-        if device.hasTorch {
-            do {
-                try device.lockForConfiguration()
-            } catch _ {
-            }
-            device.torchMode = AVCaptureTorchMode.On
-            device.unlockForConfiguration()
-        }
-    }
-    
-    func turnOffLed() {
-        if device.hasTorch {
-            do {
-                try device.lockForConfiguration()
-            } catch _ {
-            }
-            device.torchMode = AVCaptureTorchMode.Off
-            device.unlockForConfiguration()
-        }
-    }
+    //   打开手电筒会引起死机，暂时关掉  liubwtest
+//    func torchmode() {
+//        if mode == "LedOn" {
+//            torchbtn.setBackgroundImage(UIImage(named: "ledoff.png"), forState: UIControlState.Normal)
+//            mode = "LedOff"
+//            turnOffLed()
+//        } else {
+//            torchbtn.setBackgroundImage(UIImage(named: "ledon.png"), forState: UIControlState.Normal)
+//            mode = "LedOn"
+//           turnOnLed()
+//        }
+//    }
+
+//    func turnOnLed() {
+//        if device.hasTorch {
+//            do {
+//                try device.lockForConfiguration()
+//            } catch _ {
+//            }
+//            device.torchMode = AVCaptureTorchMode.On
+//            device.unlockForConfiguration()
+//        }
+//    }
+//    
+//    func turnOffLed() {
+//        if device.hasTorch {
+//            do {
+//                try device.lockForConfiguration()
+//            } catch _ {
+//            }
+//            device.torchMode = AVCaptureTorchMode.Off
+//            device.unlockForConfiguration()
+//        }
+//    }
 }
