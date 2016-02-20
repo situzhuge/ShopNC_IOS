@@ -1,10 +1,4 @@
-//
-//  StoreDetailViewController.swift
-//  ShopNC B2B2C
-//
-//  Created by 李梓平 on 14/12/24.
-//  Copyright (c) 2014年 ShopNC. All rights reserved.
-//
+//商家详情页
 
 import UIKit
 
@@ -202,11 +196,11 @@ class StoreDetailViewController: UIViewController, UIScrollViewDelegate, UITable
             allgoodsnum.text = String(goods_count)
             let store_collect = store_info.objectForKey("store_collect") as! Int
             allcollectnum.text = String(store_collect)
-            let store_credit_text = store_info.objectForKey("store_credit_text") as! String
-            let credit_array = store_credit_text.componentsSeparatedByString(",")
-            scoreone.text = " " + credit_array[0]
-            scoretwo.text = credit_array[1]
-            scorethree.text = credit_array[2]
+//            let store_credit_text = store_info.objectForKey("store_credit_text") as! String
+//            let credit_array = store_credit_text.componentsSeparatedByString(",")
+//            scoreone.text = " " + credit_array[0]
+//            scoretwo.text = "hehe" //liubwtest credit_array[1]
+//            scorethree.text = "hehe2" //liubwtest credit_array[2]
             let fav = store_info.objectForKey("is_favorate") as! Int
             if fav == 1 {
                 favbtn.backgroundColor = UIColor(red: 228/255, green: 228/255, blue: 228/255, alpha: 1.0)
@@ -214,13 +208,19 @@ class StoreDetailViewController: UIViewController, UIScrollViewDelegate, UITable
                 favbtn.setTitleColor(UIColor.grayColor(), forState: UIControlState.Normal)
                 isfav = true
             }
+            
             /**加载页头店铺图片**/
+            //加载店铺LOGO
             avatar.image = UIImage(named:"home_nopic.png")
             let avatarimgdata: NSArray = [avatar, store_info.objectForKey("store_avatar") as! String!]
             NSThread.detachNewThreadSelector("uploadImageForCellAtIndexPath:", toTarget: self, withObject: avatarimgdata)
+            
+            //加载店铺个性化背景图片   目前是无法显示liubwtest
             titlepic.image = UIImage(named:"home_nopic.png")
             let titleimgdata: NSArray = [titlepic, store_info.objectForKey("mb_title_img") as! String!]
             NSThread.detachNewThreadSelector("uploadImageForCellAtIndexPath:", toTarget: self, withObject: titleimgdata)
+            
+            
             /**轮播广告**/
             let adv_arr = store_info.objectForKey("mb_sliders") as! NSArray
             let imageW = slideadv.frame.width
